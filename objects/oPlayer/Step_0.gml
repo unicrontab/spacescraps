@@ -52,3 +52,20 @@ if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+yspeed) != 0) || (tilemap
 x += xspeed;
 y += yspeed;
 
+// Gamepad GunBlock Selection
+if (gamepad){
+	gb = instance_nearest(x, y, oGunBlock);
+	if (distance_to_object(gb) < 40){
+		if (gamepad_button_check_pressed(gamepad, gp_face1)){
+			show_debug_message("selecting unit");
+			with (gb) {
+				selectBlock(instance_id);
+				if (localSelected) with (blockMenu) { instance_destroy() };
+				blockMenu = noone;
+				if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);
+				localSelected = !localSelected;
+			}
+		}
+	}
+}
+

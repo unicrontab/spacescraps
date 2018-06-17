@@ -19,3 +19,10 @@ if (global.building && mouse_check_button_pressed(mb_left) && global.points > 0)
 		global.points -= 1;
 	}
 }
+
+if (oPlayer.gamepad && global.points > 0){
+	if (gamepad_button_check_pressed(oPlayer.gamepad, gp_face3)){
+		instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oGunBlock);
+		global.points -= 1;
+	}
+}
