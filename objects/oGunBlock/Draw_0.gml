@@ -9,11 +9,11 @@ if (localSelected) {
 } else {
 	draw_set_color($FFFD0E);
 	draw_set_circle_precision(32);
-	draw_set_alpha(0.2);
+	draw_set_alpha(0.1);
 	if (position_meeting(mouse_x, mouse_y, id)) {
-		draw_circle(x,y,15,true);
+		draw_circle(x,y,105,false);
 	} else {
-		draw_circle(x,y,10,true);
+		draw_circle(x,y,100,false);
 	}
 	draw_set_alpha(1);
 }

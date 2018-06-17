@@ -14,5 +14,5 @@ localGun.x = x;
 localGun.y = y;
 if (blockMenu != noone) {
 	blockMenu.x = x;
-	blockMenu.y = y - 25;
+	blockMenu.y = y;
 }
