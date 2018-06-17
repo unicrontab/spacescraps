@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "20acd2b5-0309-4831-a8f7-8eb92b39b927",
+            "Value": {
+                "id": "0c343e5e-e181-4e66-a51a-4d39a13f6d31",
+                "resourcePath": "sprites\\sprite17\\sprite17.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "20afe53d-e579-4fbc-8725-e74fc96cd3fc",
             "Value": {
                 "id": "034002f6-6ffb-4c7d-9fef-2324cc0986c6",
@@ -143,6 +151,14 @@
             }
         },
         {
+            "Key": "3bc73355-fabd-4c9b-b383-5bc59e839755",
+            "Value": {
+                "id": "604de324-de8b-4f4f-8e4d-9a49e26dd7fa",
+                "resourcePath": "objects\\start\\start.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "40343a6b-a71c-4236-a6bb-f8ef74a2faf3",
             "Value": {
                 "id": "55f79dc2-6777-41c2-9914-64a61a00e4e1",
@@ -180,6 +196,14 @@
                 "id": "2bd5b51c-d1f3-431a-9088-46896d645dbd",
                 "resourcePath": "views\\56100cb7-2e5d-45a9-8d25-23ec071e0ec8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5fd6c8ea-926e-4cd3-9a95-3a61eee4b936",
+            "Value": {
+                "id": "3bbcc31c-f453-4a47-b59b-d99a6cbfbc99",
+                "resourcePath": "rooms\\menu\\menu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -311,11 +335,27 @@
             }
         },
         {
+            "Key": "9d549b69-ff66-40e0-b65c-99e8ad5fb13c",
+            "Value": {
+                "id": "8f889474-e446-4da1-9c8b-578eecf211b6",
+                "resourcePath": "sprites\\sgunCursor\\sgunCursor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9e063c9d-858e-445a-ad77-f3106a409a98",
             "Value": {
                 "id": "2cdbe4c0-eab7-4da7-9653-aa2aaaa04ee9",
                 "resourcePath": "objects\\oArrow\\oArrow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9ef7311a-dbe2-4af4-af98-18be18c04086",
+            "Value": {
+                "id": "d0fe2d2b-d282-4cf3-bfca-c8deb7134d30",
+                "resourcePath": "scripts\\drawHealthBar\\drawHealthBar.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -506,7 +546,8 @@
     "script_order": [
         "4498328d-97d5-42bb-8ecc-95bf073c581e",
         "e44b9c20-35d0-4e82-8882-8b6bb6f2d693",
-        "8d78c64a-0fcd-498c-8ae2-283245c3ebd3"
+        "8d78c64a-0fcd-498c-8ae2-283245c3ebd3",
+        "9ef7311a-dbe2-4af4-af98-18be18c04086"
     ],
     "tutorial": ""
 }

@@ -6,6 +6,15 @@ cursor_sprite = sCursor;
 enemyDelay = 5 * room_speed;
 enemyCount = 0;
 enemyHp = 5;
-enemyHpMultiplier = 2;
-maxEnemyCount = 100;
+enemyHpMultiplier = 1.2;
+maxEnemyCount = 20;
 currentInterval = 0;
+
+
+starTilemapLayerId = layer_get_id("StarTiles");
+starTilemapId = layer_tilemap_get_id(starTilemapLayerId);
+
+var lay_id = layer_get_id("Background");
+var back_id = layer_background_get_id(lay_id);
+layer_background_xscale(back_id, 4);
+layer_background_yscale(back_id, 4);
