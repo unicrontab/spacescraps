@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0de8464c-ef43-4c3d-be5e-c732dc44ac08",
+            "Value": {
+                "id": "be05c5e3-4c66-4844-a7da-2ebc56fb1fd3",
+                "resourcePath": "sprites\\sPlasmaBig\\sPlasmaBig.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18e720c3-d8d2-476d-9997-20b21949320e",
             "Value": {
                 "id": "287dc04e-2eda-4298-bfec-374d9544dc4b",
