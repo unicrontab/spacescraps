@@ -2,7 +2,7 @@ x = oPlayer.x;
 y = oPlayer.y;
 
 
-if (oPlayer.gamepad){
+if (oPlayer.gamepad != noone){
 	if ((gamepad_axis_value(oPlayer.gamepad, gp_axisrh) != 0) || 
 		(gamepad_axis_value (oPlayer.gamepad, gp_axisrv) != 0)){
 			
@@ -13,7 +13,7 @@ if (oPlayer.gamepad){
 else image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 firingDelay = firingDelay - 1;
-if (oPlayer.gamepad){
+if (oPlayer.gamepad != noone){
 	pad_trigger = gamepad_button_value(oPlayer.gamepad, gp_shoulderrb);
 	if pad_trigger && (firingDelay < 0) {
 		firingDelay	= 5;

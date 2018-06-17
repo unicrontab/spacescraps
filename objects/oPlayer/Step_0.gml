@@ -53,7 +53,7 @@ x += xspeed;
 y += yspeed;
 
 // Gamepad GunBlock Selection
-if (gamepad){
+if (gamepad != noone){
 	gb = instance_nearest(x, y, oGunBlock);
 	if (distance_to_object(gb) < 40){
 		if (gamepad_button_check_pressed(gamepad, gp_face1)){
