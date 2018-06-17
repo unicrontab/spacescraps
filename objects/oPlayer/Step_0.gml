@@ -3,14 +3,19 @@ keyRight = keyboard_check(ord("E")) + keyboard_check(ord("D"));
 keyUp = keyboard_check(188) + keyboard_check(ord("W"));
 keyDown = keyboard_check(ord("S")) + keyboard_check(ord("O"));
 
-var horizontalMove = keyRight - keyLeft;
-var verticalMove = keyDown - keyUp;
+if (gamepad != noone){
+	h_axis = gamepad_axis_value(gamepad, gp_axislh);
+	v_axis = gamepad_axis_value(gamepad, gp_axislv);
+}
+
+var horizontalMove = (keyRight - keyLeft) + h_axis;
+var verticalMove = (keyDown - keyUp) + v_axis;
 
 
-if (keyLeft) with(instance_create_layer(x + 5, y + random_range(-2,2), "Particles", oThrust)){ direction = 0 };	
-if (keyRight) with(instance_create_layer(x - 5, y + random_range(-2,2), "Particles", oThrust)){ direction = 180 };
-if (keyDown) with(instance_create_layer(x + random_range(-2,2), y - 5, "Particles", oThrust)){ direction = 90 };
-if (keyUp) with(instance_create_layer(x + random_range(-2,2), y + 5, "Particles", oThrust)){ direction = 270 };
+if (keyLeft || sign(-h_axis)) with(instance_create_layer(x + 5, y + random_range(-2,2), "Particles", oThrust)){ direction = 0 };	
+if (keyRight || sign(h_axis)) with(instance_create_layer(x - 5, y + random_range(-2,2), "Particles", oThrust)){ direction = 180 };
+if (keyDown || sign(v_axis)) with(instance_create_layer(x + random_range(-2,2), y - 5, "Particles", oThrust)){ direction = 90 };
+if (keyUp || sign(-v_axis)) with(instance_create_layer(x + random_range(-2,2), y + 5, "Particles", oThrust)){ direction = 270 };
 
 xspeed += horizontalMove * movespeed;
 yspeed += verticalMove * movespeed;
@@ -43,7 +48,7 @@ if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+yspeed) != 0) || (tilemap
 	yspeed = 0;
 }
 
-
+ 
 x += xspeed;
 y += yspeed;
 
