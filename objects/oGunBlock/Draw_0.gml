@@ -9,6 +9,7 @@ if (localSelected) {
 	draw_circle(x,y,100,true);
 	draw_set_color($000099);
 	draw_circle(x,y,10,true);
+	draw_set_color($FFFD0E);
 	draw_set_alpha(1);
 } else {
 	draw_set_color($FFFD0E);

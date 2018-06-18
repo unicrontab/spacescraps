@@ -8,6 +8,7 @@ if (async_load[? "event_type"] == "gamepad discovered"){
     gamepad_set_axis_deadzone(pad, 0.5);       // Set the "deadzone" for the axis
     gamepad_set_button_threshold(pad, 0.1);    // Set the "threshold" for the triggers
 	
+	oPlayer.gamepad = pad;
 	with (oPlayer){
 		gamepad = pad;
 	}
@@ -19,5 +20,8 @@ else if (async_load[? "event_type"] == "gamepad lost"){
 	with (oPlayer){
 		gamepad = noone;
 	}
+	oPlayer.gamepad = noone;
 	
+} else {
+	show_debug_message(string(async_load[? "event_type"]));
 }

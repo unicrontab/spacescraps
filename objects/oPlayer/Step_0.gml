@@ -3,7 +3,10 @@ keyRight = keyboard_check(ord("E")) + keyboard_check(ord("D"));
 keyUp = keyboard_check(188) + keyboard_check(ord("W"));
 keyDown = keyboard_check(ord("S")) + keyboard_check(ord("O"));
 
-if (gamepad != noone){
+if (gamepad_is_connected(0)) gamepad = 0;
+
+if (gamepad != noone) {
+
 	h_axis = gamepad_axis_value(gamepad, gp_axislh);
 	v_axis = gamepad_axis_value(gamepad, gp_axislv);
 }
