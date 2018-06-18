@@ -9,7 +9,6 @@ var closestGunBlock = instance_nearest(x,y, object_index);
 var tooClose = collision_circle(x,y,10,oGunBlock,false,true);
 
 if (localSelected && distance_to_object(oPlayer) > 50 && tooClose < 0) {
-	show_debug_message(string(tooClose));
 	x += (xTo - x) / 50;
 	y += (yTo - y) / 50;
 }
