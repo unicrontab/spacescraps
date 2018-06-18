@@ -6,6 +6,7 @@ if (argument0) {
 		var xx = 32;
 		var yy = 32 + (160 * i);
 		if gamepad_is_connected(i){
+			draw_set_halign(fa_left);
 		    draw_text(xx, yy, "Gamepad Slot - " + string(i));
 		    draw_text(xx, yy + 20, "Gamepad Type - " + string(gamepad_get_description(i)));
 		    draw_text(xx, yy + 40, "Left H Axis - " + string(gamepad_axis_value(i, gp_axislh)));

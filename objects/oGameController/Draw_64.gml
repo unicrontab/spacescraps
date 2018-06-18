@@ -6,4 +6,4 @@ if (oPlayer.gamepad == noone) draw_text_transformed(x + 200, y, "Press ESC to co
 var pointColor = $06a4ff;
 draw_text_transformed_color(x + 20, y+40, string(global.points),1,1, image_angle, pointColor, pointColor, pointColor, pointColor, 1);
 
-debugGamepad(true);
+debugGamepad(false);
