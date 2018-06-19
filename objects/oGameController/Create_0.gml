@@ -9,7 +9,8 @@ enemyHp = 5;
 enemyHpMultiplier = 1.2;
 maxEnemyCount = 20;
 currentInterval = 0;
-
+currentLevel = 1;
+levels = 3;
 
 starTilemapLayerId = layer_get_id("StarTiles");
 starTilemapId = layer_tilemap_get_id(starTilemapLayerId);

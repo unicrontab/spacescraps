@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "8536ccce-d69c-41b6-8c51-d40dff1d9d9b",
+            "Value": {
+                "id": "74ac336a-6ecf-48ab-b974-cb73980c2164",
+                "resourcePath": "views\\8536ccce-d69c-41b6-8c51-d40dff1d9d9b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "869a9482-0035-4f46-beac-a0e3c2e0f55f",
             "Value": {
                 "id": "6c1f2660-07b3-43f8-9154-6a08db9f826f",
@@ -356,6 +364,14 @@
                 "id": "d0fe2d2b-d282-4cf3-bfca-c8deb7134d30",
                 "resourcePath": "scripts\\drawHealthBar\\drawHealthBar.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a0f83953-6dd2-4208-a4a7-eee8b086c321",
+            "Value": {
+                "id": "416404f5-da48-4f64-b849-834142cd4d7a",
+                "resourcePath": "objects\\clickToStart\\clickToStart.yy",
+                "resourceType": "GMObject"
             }
         },
         {

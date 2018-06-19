@@ -2,7 +2,7 @@
 
 
 if (argument0) {
-	for (var i = 0; i < 4; i++;) {
+	for (var i = 0; i < 8; i++;) {
 		var xx = 32;
 		var yy = 32 + (160 * i);
 		if gamepad_is_connected(i){
