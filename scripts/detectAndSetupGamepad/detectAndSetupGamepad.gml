@@ -1,4 +1,4 @@
-// detectAndSetupGamepad() returns gamepadId
+// detectAndSetupGamepad() returns number of connected gamepads
 if (!gamepad_is_connected(global.playerGamepads[0])) global.playerGamepads[0] = noone;
 if (!gamepad_is_connected(global.playerGamepads[1])) global.playerGamepads[1] = noone;
 
@@ -21,6 +21,8 @@ for (var i = 0; i <= gamepadCount; i++;){
 if (detectedGamepads == 0) global.playerGamepads[0] = noone;
 if (detectedGamepads <= 1) global.playerGamepads[1] = noone;
 
-show_debug_message("Player1: " + string(global.playerGamepads[0]))
+show_debug_message("Player1: " + string(global.playerGamepads[0]));
 show_debug_message("Player2: " + string(global.playerGamepads[1]));
+
+return detectedGamepads;
 

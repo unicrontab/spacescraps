@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "3f4421bd-d916-4c90-a621-9decf5814097",
+            "Value": {
+                "id": "4937ad72-9a1b-45dd-9c16-85b4310491f1",
+                "resourcePath": "objects\\oPlayerGun2\\oPlayerGun2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "40343a6b-a71c-4236-a6bb-f8ef74a2faf3",
             "Value": {
                 "id": "55f79dc2-6777-41c2-9914-64a61a00e4e1",
@@ -612,6 +620,14 @@
                 "id": "0aa7a469-51c4-4822-a0ff-f0b738a2b8cc",
                 "resourcePath": "sprites\\sGamepad\\sGamepad.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "feaab0f0-3344-4a42-917f-aee7aa8ca7eb",
+            "Value": {
+                "id": "445b8910-0645-4cfe-9556-eac410f2aa30",
+                "resourcePath": "objects\\oPlayer2\\oPlayer2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
