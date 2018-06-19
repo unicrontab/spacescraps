@@ -12,4 +12,4 @@ h_axis = 0;
 v_axis = 0;
 tilemap = layer_tilemap_get_id("Tiles_1");
 
-gamepad = detectAndSetupGamepad();
+detectAndSetupGamepad();

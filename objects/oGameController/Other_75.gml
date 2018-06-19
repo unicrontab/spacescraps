@@ -1,1 +1,2 @@
-with (oPlayer) gamepad = systemAsyncGetGamepad();
+systemAsyncGetGamepad();
+detectAndSetupGamepad();
