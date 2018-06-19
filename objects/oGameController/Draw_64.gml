@@ -1,4 +1,5 @@
 draw_set_font(base);
+draw_set_halign(fa_left);
 draw_text_transformed(x + 20, y, string(global.currentScore),1,1, image_angle);
 if (oPlayer.gamepad == noone) draw_text_transformed(x + 200, y, "Press ESC to connect Controller" ,1,1, image_angle);
 
