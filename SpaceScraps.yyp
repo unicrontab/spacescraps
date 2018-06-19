@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "25ee28d1-fb4c-4c7b-880a-1da309d68cd7",
+            "Value": {
+                "id": "94871f29-1873-4abd-9726-8ad752a27584",
+                "resourcePath": "views\\25ee28d1-fb4c-4c7b-880a-1da309d68cd7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2890c503-4827-4d3b-be9f-81134d01bf4e",
             "Value": {
                 "id": "df91a1d8-4146-40b0-be54-6f74e48d9d9b",
@@ -132,6 +140,14 @@
                 "id": "88d4ed36-ee82-4726-a0eb-1a58695cc687",
                 "resourcePath": "tilesets\\tStarMap\\tStarMap.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "340c48f0-0071-478a-996d-4b4a6f9d888f",
+            "Value": {
+                "id": "eb7b59b5-b42d-40d8-b419-1b8f356885ca",
+                "resourcePath": "scripts\\systemAsyncGetGamepad\\systemAsyncGetGamepad.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -503,6 +519,14 @@
             }
         },
         {
+            "Key": "c78b9399-fc03-49e3-ae1f-0404b4620c47",
+            "Value": {
+                "id": "9f6196c6-07d4-4de1-a7dd-8f442aa2b0b1",
+                "resourcePath": "scripts\\detectAndSetupGamepad\\detectAndSetupGamepad.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "13757176-fed5-404f-86bb-ac2bb828001e",
@@ -596,7 +620,9 @@
         "e44b9c20-35d0-4e82-8882-8b6bb6f2d693",
         "8d78c64a-0fcd-498c-8ae2-283245c3ebd3",
         "9ef7311a-dbe2-4af4-af98-18be18c04086",
-        "a3dc718c-8456-4ffa-8d8c-06b841750742"
+        "c78b9399-fc03-49e3-ae1f-0404b4620c47",
+        "a3dc718c-8456-4ffa-8d8c-06b841750742",
+        "340c48f0-0071-478a-996d-4b4a6f9d888f"
     ],
     "tutorial": ""
 }
