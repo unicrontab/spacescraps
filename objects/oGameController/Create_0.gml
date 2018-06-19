@@ -5,8 +5,8 @@ cursor_sprite = sCursor;
 
 enemyDelay = 2 * room_speed;
 enemyCount = 0;
-enemyHp = 25;
-enemyHpMultiplier = 1.02;
+enemyHp = 10;
+enemyHpMultiplier = 1.01;
 maxEnemyCount = 15;
 currentInterval = 0;
 currentLevel = 1;
