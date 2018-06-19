@@ -9,6 +9,14 @@ if (currentInterval >= enemyDelay && enemyCount <= maxEnemyCount) {
 	currentInterval += 1;	
 }
 
+if (enemyCount > maxEnemyCount && instance_number(enemy) == 0) {
+	currentLevel += 1;
+	repeat(1000) {
+		instance_create_layer(random_range(oPlayer.x - 10, oPlayer.x + 10),random_range(oPlayer.y - 10, oPlayer.y + 10), "Particles", oPlasmaSpray);	
+	}
+	enemyCount = 0;
+}
+
 
 tilemap_x(starTilemapId, -((oPlayer.x) / 10));
 tilemap_y(starTilemapId, -((oPlayer.y) / 10));
@@ -20,9 +28,9 @@ if (global.building && mouse_check_button_pressed(mb_left) && global.points > 0)
 	}
 }
 
-if (oPlayer.gamepad != noone && global.points > 0){
+if (oPlayer.gamepad != noone && global.points >= 10){
 	if (gamepad_button_check_pressed(oPlayer.gamepad, gp_face3)){
 		instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oGunBlock);
-		global.points -= 1;
+		global.points -= 10;
 	}
 }
