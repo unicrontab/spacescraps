@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "f9196487-3ec0-4afb-931c-933a1724d8c6",
+            "Value": {
+                "id": "0aa7a469-51c4-4822-a0ff-f0b738a2b8cc",
+                "resourcePath": "sprites\\sGamepad\\sGamepad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "feb96089-22d2-49e0-81a3-ce9e68290499",
             "Value": {
                 "id": "74e8a063-200c-47cb-ab4d-7891962790f1",
