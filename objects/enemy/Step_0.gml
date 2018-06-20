@@ -10,7 +10,7 @@ if (hp <= 0) {
 	}
 	global.points += 1;
 	global.currentScore += 1;
-	screenShake(3,5);
+	screenShake(3,5);	
 	instance_destroy();
 }
 
