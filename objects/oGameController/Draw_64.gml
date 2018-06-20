@@ -11,4 +11,4 @@ var levelColor = $fffd0e;
 draw_text_transformed_color(x + 20, y+80, "Level: " + string(currentLevel),1,1, image_angle, levelColor, levelColor, levelColor, levelColor, 1);
 
 
-debugGamepad(true);
+debugGamepad(false);
