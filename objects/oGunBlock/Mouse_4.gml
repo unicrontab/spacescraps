@@ -1,4 +1,4 @@
-selectBlock(instance_id);
+
 show_debug_message("Selected" + string(localSelected));
 
 if (localSelected) with (blockMenu) { instance_destroy() };

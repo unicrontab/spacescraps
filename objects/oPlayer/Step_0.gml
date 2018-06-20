@@ -59,7 +59,7 @@ if (gamepad != noone){
 	if (distance_to_object(gb) < 40){
 		if (gamepad_button_check_pressed(gamepad, gp_face1)){
 			with (gb) {
-				selectBlock(instance_id);
+				selectBlock(0, instance_id);
 				if (localSelected) with (blockMenu) { instance_destroy() };
 				blockMenu = noone;
 				if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);

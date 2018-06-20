@@ -1,14 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 var xTo = oPlayer.x;
 var yTo = oPlayer.y;
 
 var closestGunBlock = instance_nearest(x,y, object_index);
 
-var tooClose = collision_circle(x,y,10,oGunBlock,false,true);
+if (distance_to_object(oPlayer) > distance_to_object(oPlayer2)) {
+	xTo = oPlayer2.x;
+	yTo = oPlayer2.y;
+}
 
-if (localSelected && distance_to_object(oPlayer) > 50 && tooClose < 0) {
+
+var tooClose = collision_circle(x,y,10,oGunBlock,false,true);
+if (localSelected && distance_to_object(oPlayer) > 40 && distance_to_object(oPlayer2) > 40 && tooClose < 0) {
 	x += (xTo - x) / 50;
 	y += (yTo - y) / 50;
 }
