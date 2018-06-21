@@ -40,3 +40,9 @@ if (oPlayer.gamepad != noone && global.points >= gunCost && instance_exists(oPla
 	}
 }
 
+if (oPlayer2.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer2)){
+	if (gamepad_button_check_pressed(oPlayer2.gamepad, gp_face3)){
+		instance_create_layer(oPlayer2.x, oPlayer2.y, "Instances", oGunBlock);
+		global.points -= 10;
+	}
+}
