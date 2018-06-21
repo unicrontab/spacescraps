@@ -1,5 +1,5 @@
-	tilemap_x(starTilemapId, -((oPlayer.x) / 10));
-	tilemap_y(starTilemapId, -((oPlayer.y) / 10));
+tilemap_x(starTilemapId, -((oPlayer.x) / 10));
+tilemap_y(starTilemapId, -((oPlayer.y) / 10));
 	
 if (currentInterval >= enemyDelay && enemyCount <= maxEnemyCount && currentLevel <= levels) {
 	with(instance_create_layer(enemyPath.x, enemyPath.y, "Enemy", enemy)){
