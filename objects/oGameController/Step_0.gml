@@ -17,6 +17,9 @@ if (enemyCount > maxEnemyCount && instance_number(enemy) == 0) {
 	repeat(1000) {
 		instance_create_layer(random_range(oPlayer.x - 10, oPlayer.x + 10),random_range(oPlayer.y - 10, oPlayer.y + 10), "Particles", oPlasmaSpray);	
 	}
+	repeat(1000) {
+		instance_create_layer(random_range(oPlayer2.x - 10, oPlayer2.x + 10),random_range(oPlayer2.y - 10, oPlayer2.y + 10), "Particles", oPlasmaSpray);	
+	}
 	enemyCount = 0;
 }
 

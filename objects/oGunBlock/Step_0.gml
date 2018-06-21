@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (!localSelected) {
+	sprite_index = sGunDeployed;
+} else {
+	sprite_index = sgun;	
+}
 var xTo = oPlayer.x;
 var yTo = oPlayer.y;
 

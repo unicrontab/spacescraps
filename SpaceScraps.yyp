@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "7dc603d3-f759-462f-a4e7-5119aa599a2b",
+            "Value": {
+                "id": "5235c721-bfdd-47a1-9d13-025b94480606",
+                "resourcePath": "sprites\\sGunDeployed\\sGunDeployed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7fdac6a3-18e4-44e3-8fb4-5794bf2941f6",
             "Value": {
                 "id": "f86686ed-bbd7-4f3d-915c-2710f2ce1cf9",

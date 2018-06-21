@@ -1,1 +1,1 @@
-systemAsyncGetGamepad();
+gamepad = systemAsyncGetGamepad();

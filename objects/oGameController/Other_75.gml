@@ -1,2 +1,2 @@
 systemAsyncGetGamepad();
-var players = detectAndSetupGamepad();
+detectAndSetupGamepad();

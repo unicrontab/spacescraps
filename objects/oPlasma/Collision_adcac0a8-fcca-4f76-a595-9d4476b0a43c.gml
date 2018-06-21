@@ -7,6 +7,6 @@ with (instance_create_layer(other.x,other.y,"Particles",oEnemySpray)){
 	direction = newDirection + random_range(-10,10);
 }
 with (other) {
-	hp -= 1;	
+	hp -= other.damage;	
 }
 instance_destroy();
