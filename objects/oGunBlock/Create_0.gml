@@ -3,3 +3,4 @@ blockMenu = noone;
 localSelected = false;
 xspeed = 0;
 yspeed = 0;
+drawHelp = false;
