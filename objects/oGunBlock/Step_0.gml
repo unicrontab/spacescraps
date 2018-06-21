@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!localSelected) {
+if (!localSelected && level == 1) {
 	sprite_index = sGunDeployed;
+} else if (level >= 2) {
+	sprite_index = sGun2;	
 } else {
 	sprite_index = sgun;	
 }

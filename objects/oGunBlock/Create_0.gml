@@ -4,3 +4,5 @@ localSelected = false;
 xspeed = 0;
 yspeed = 0;
 drawHelp = false;
+level = 1;
+maxLevel = 2;

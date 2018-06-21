@@ -66,6 +66,11 @@ if (gamepad != noone){
 				localSelected = !localSelected;
 			}
 		}
+		if (gamepad_button_check_pressed(gamepad, gp_face3)){
+			with (gb) {
+				if (level <= maxLevel) level += 1;
+			}
+		}
 	}
 }
 
