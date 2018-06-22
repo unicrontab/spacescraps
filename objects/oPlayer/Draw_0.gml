@@ -6,8 +6,8 @@ if (distance_to_object(gb) < 40){
 }
 
 if (gb.level > drawLevel) {
-	repeat(1000) {
-		instance_create_layer(random_range(gb.x - 10, gb.x + 10),random_range(gb.y - 10, gb.y + 10), "Particles", oPlasmaSpray);	
+	repeat(200) {
+		instance_create_layer(random_range(gb.x - 5, gb.x + 5),random_range(gb.y - 5, gb.y + 5), "Particles", oEnemySpray);	
 	}
 	drawLevel = gb.level;
 }

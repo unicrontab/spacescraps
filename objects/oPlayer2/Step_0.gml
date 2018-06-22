@@ -73,10 +73,14 @@ if (gamepad != noone){
 		}
 		if (gamepad_button_check_pressed(gamepad, gp_face3)){
 			with (gb) {
-				if (level <= maxLevel) level += 1;
+				if (level <= maxLevel && global.points >= 10) {
+					global.points -= 10;
+					level += 1;
+				}
 			}
 		}
 	}
 }
+
 
 

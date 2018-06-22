@@ -8,7 +8,7 @@ enemyHp = 10;
 enemyHpMultiplier = 1.01;
 maxEnemyCount = 15;
 levels = 5;
-gunCost = 5;
+gunCost = 10;
 
 
 // Ephem

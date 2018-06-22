@@ -5,7 +5,7 @@ if (collidedEnemy) {
 	if (firingDelay < 0) {
 		firingDelay	= 15;
 		with (instance_create_layer(x, y, "Instances", oPlasma)) {
-			if (other.deployed) damage = 2 * level;
+			if (other.deployed) damage = 2 * (level * level);
 			speed = 8;
 			direction = other.image_angle;
 			image_angle = direction;
