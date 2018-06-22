@@ -57,15 +57,26 @@ y += yspeed;
 if (gamepad != noone){
 	gb = instance_nearest(x, y, oGunBlock);
 	if (distance_to_object(gb) < 40){
+		if (gamepad_button_check_pressed(gamepad, gp_face4)){
+			with (gb) {
+				showInfo = !showInfo;
+			}
+		}		
 		if (gamepad_button_check_pressed(gamepad, gp_face1)){
 			with (gb) {
-				selectBlock(1, instance_id);
+				selectBlock(0, instance_id);
 				if (localSelected) with (blockMenu) { instance_destroy() };
 				blockMenu = noone;
 				if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);
 				localSelected = !localSelected;
 			}
 		}
+		if (gamepad_button_check_pressed(gamepad, gp_face3)){
+			with (gb) {
+				if (level <= maxLevel) level += 1;
+			}
+		}
 	}
 }
+
 
