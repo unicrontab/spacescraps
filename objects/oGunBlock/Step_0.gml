@@ -35,6 +35,7 @@ if (tooClose > 0) {
 
 localGun.x = x;
 localGun.y = y;
+localGun.level = level;
 if (blockMenu != noone) {
 	blockMenu.x = x;
 	blockMenu.y = y;
