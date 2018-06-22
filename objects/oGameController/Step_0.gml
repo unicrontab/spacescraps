@@ -29,7 +29,7 @@ if (currentLevel > levels && room_exists(room_next(room))) {
 }
 
 	
-if (global.building && mouse_check_button_pressed(mb_left) && global.points > 0) {
+if (global.building && mouse_check_button_pressed(mb_left) && global.points > gunCost) {
 	if (!place_meeting(mouse_x,mouse_y,oGunBlock)){
 		instance_create_layer(mouse_x, mouse_y, "Instances", oGunBlock);
 		global.points -= 1;
@@ -46,6 +46,6 @@ if (oPlayer.gamepad != noone && global.points >= gunCost && instance_exists(oPla
 if (oPlayer2.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer2)){
 	if (gamepad_button_check_pressed(oPlayer2.gamepad, gp_face2)){
 		instance_create_layer(oPlayer2.x, oPlayer2.y, "Instances", oGunBlock);
-		global.points -= 10;
+		global.points -= gunCost;
 	}
 }

@@ -66,3 +66,13 @@ if (localSelected) {
 	}
 }
 
+if (showInfo) {
+	draw_set_halign(fa_left);
+	draw_set_font(subtitle);
+	draw_text_transformed_color( x+10, y+15, "level " + string(level),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);	
+	draw_text_transformed_color( x+10, y+25, "dmg   " + string(level*2),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);	
+	draw_set_halign(fa_center);
+	draw_set_font(base);
+}
+
+

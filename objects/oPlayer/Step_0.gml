@@ -57,6 +57,11 @@ y += yspeed;
 if (gamepad != noone){
 	gb = instance_nearest(x, y, oGunBlock);
 	if (distance_to_object(gb) < 40){
+		if (gamepad_button_check_pressed(gamepad, gp_face4)){
+			with (gb) {
+				showInfo = !showInfo;
+			}
+		}		
 		if (gamepad_button_check_pressed(gamepad, gp_face1)){
 			with (gb) {
 				selectBlock(0, instance_id);
