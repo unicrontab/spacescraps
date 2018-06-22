@@ -37,14 +37,14 @@ if (global.building && mouse_check_button_pressed(mb_left) && global.points > 0)
 }
 
 if (oPlayer.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer)){
-	if (gamepad_button_check_pressed(oPlayer.gamepad, gp_face3)){
+	if (gamepad_button_check_pressed(oPlayer.gamepad, gp_face2)){
 		instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oGunBlock);
 		global.points -= gunCost;
 	}
 }
 
 if (oPlayer2.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer2)){
-	if (gamepad_button_check_pressed(oPlayer2.gamepad, gp_face3)){
+	if (gamepad_button_check_pressed(oPlayer2.gamepad, gp_face2)){
 		instance_create_layer(oPlayer2.x, oPlayer2.y, "Instances", oGunBlock);
 		global.points -= 10;
 	}
