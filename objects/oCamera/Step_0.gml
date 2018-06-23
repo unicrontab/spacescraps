@@ -1,3 +1,8 @@
+if (instance_exists(oPlayer2)) {
+	follow2 = oPlayer2;
+} else {
+	follow2 = noone;
+}
 
 if (follow != noone) {
 	xTo = follow.x;

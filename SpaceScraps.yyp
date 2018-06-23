@@ -31,11 +31,27 @@
     },
     "resources": [
         {
+            "Key": "05510a73-f8f0-47bf-a941-21cb635a6e63",
+            "Value": {
+                "id": "f04daccf-fa84-4edb-8022-6914772c9ebf",
+                "resourcePath": "sprites\\sGun4\\sGun4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "081be29d-cd42-4e49-8a4f-e7eef6a92df1",
             "Value": {
                 "id": "d40fe362-3aa2-4fe3-b316-6d542b547a8f",
                 "resourcePath": "views\\081be29d-cd42-4e49-8a4f-e7eef6a92df1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0bd9348b-29a1-40d8-b50c-af241f8cb82e",
+            "Value": {
+                "id": "7c0d175c-578a-479c-80ff-5a4254fd94cf",
+                "resourcePath": "objects\\levelDisplay\\levelDisplay.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -135,11 +151,35 @@
             }
         },
         {
+            "Key": "2d4035ba-8ff3-475a-b825-ed3d3727e22b",
+            "Value": {
+                "id": "e2eec9da-109e-4a59-bb86-647f0e380dcb",
+                "resourcePath": "objects\\oBase\\oBase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "300475c7-1804-4f3a-a7b3-5ba29b92bcce",
+            "Value": {
+                "id": "c100e1de-1350-41e3-be16-d4b0966be906",
+                "resourcePath": "objects\\oGamepadController\\oGamepadController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31cfd34f-23fb-4f47-a2e7-c97fc035fa6c",
             "Value": {
                 "id": "88d4ed36-ee82-4726-a0eb-1a58695cc687",
                 "resourcePath": "tilesets\\tStarMap\\tStarMap.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "32816d69-bbde-4fc9-adc7-c7573984ce6a",
+            "Value": {
+                "id": "eae210a5-ca6b-4c00-9a51-67aa5f60b9f0",
+                "resourcePath": "sprites\\sGun5\\sGun5.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -423,6 +463,14 @@
             }
         },
         {
+            "Key": "8defd723-8993-4f31-a689-595bf7fcb61a",
+            "Value": {
+                "id": "e71ebcab-8295-4cce-b552-dfd4dd0fc300",
+                "resourcePath": "sprites\\sGun3\\sGun3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8fb68f80-525f-4b55-862f-4c16e88028a3",
             "Value": {
                 "id": "3bfd0d2d-2efb-4598-977f-bf0df8b620d3",
@@ -444,6 +492,14 @@
                 "id": "d06d64b0-4dc7-4db4-9e4e-8445fc61e458",
                 "resourcePath": "views\\98bcabce-01eb-4f61-bba0-f7c413456e82.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "992de80a-7776-498a-aa57-2ced312ff269",
+            "Value": {
+                "id": "1feaa35a-f88a-43c1-a9db-b7f89d0da17c",
+                "resourcePath": "sprites\\sBase\\sBase.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -666,7 +722,7 @@
             "Key": "d0685a34-9749-4b16-8e68-cbfdf90ab008",
             "Value": {
                 "id": "732a221b-14d8-49bd-95ec-b37b157c8aa4",
-                "resourcePath": "sprites\\sgun\\sgun.yy",
+                "resourcePath": "sprites\\sGun1\\sGun1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -716,6 +772,14 @@
                 "id": "6c52b3e7-9594-4cf3-a4f6-bfc9dc5d407e",
                 "resourcePath": "scripts\\screenShake\\screenShake.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e6c2c915-c3b4-41e1-afd4-288526e08278",
+            "Value": {
+                "id": "4f599577-00b5-4391-8439-2fc4d3cc52cf",
+                "resourcePath": "sounds\\sound0\\sound0.yy",
+                "resourceType": "GMSound"
             }
         },
         {

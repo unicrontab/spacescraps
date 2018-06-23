@@ -1,0 +1,3 @@
+systemAsyncGetGamepad();
+detectAndSetupGamepad();
+

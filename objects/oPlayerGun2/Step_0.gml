@@ -1,5 +1,4 @@
-x = oPlayer2.x;
-y = oPlayer2.y;
+if (!instance_exists(oPlayer2)) instance_destroy();
 
 
 if (oPlayer2.gamepad != noone){

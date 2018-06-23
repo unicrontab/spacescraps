@@ -15,7 +15,7 @@ view_visible[1] = false;
 
 
 follow = oPlayer;
-follow2 = oPlayer2;
+follow2 = noone;
 xTo = x;
 yTo = y;
 xTo2 = x;

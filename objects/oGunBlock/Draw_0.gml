@@ -18,7 +18,7 @@ if (drawHelp && !localSelected) {
 	draw_set_halign(fa_right);
 	draw_sprite_ext(spriteX, -1, x-15,    y, 0.5, 0.5, image_angle, c_white, 1);
 	draw_text_transformed_color( x-22, y, "upgrade",0.5,0.5, image_angle, blue, blue, blue, blue, 0.8);
-	draw_text_transformed_color( x-50, y, "-10",0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);
+	draw_text_transformed_color( x-50, y, string(-10 * level),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);
 	
 	draw_set_halign(fa_center);
 	draw_sprite_ext(spriteY, -1, x, y-15, 0.5, 0.5, image_angle, c_white, 1);

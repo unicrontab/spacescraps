@@ -1,0 +1,2 @@
+setupGlobals();
+detectAndSetupGamepad();

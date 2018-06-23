@@ -1,15 +1,15 @@
 setupGlobals();
 window_set_cursor(cr_none);
 cursor_sprite = sCursor;
+detectAndSetupGamepad();
 
 // Config
 enemyDelay = 2 * room_speed;
 enemyHp = 10;
-enemyHpMultiplier = 1.01;
+enemyHpMultiplier = 20.00;
 maxEnemyCount = 15;
-levels = 5;
+levels = 10;
 gunCost = 10;
-
 
 // Ephem
 enemyCount = 0;
