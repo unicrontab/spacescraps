@@ -14,6 +14,6 @@ repeat(400) {
 instance_create_layer(x,y,"Particles", oRedFlash);
 with (other) {
 	hp -= other.damage;	
-	audio_play_sound(sound3, 10, false);
+	audio_play_sound(bigExplosion, 10, false);
 }
 instance_destroy();

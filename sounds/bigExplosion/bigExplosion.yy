@@ -1,14 +1,14 @@
 {
-    "id": "bf9435e8-c96e-4382-a76e-b34dcf9c3e94",
+    "id": "e87a4c21-0f4e-453f-9808-f059cade1aa6",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "hit",
+    "name": "bigExplosion",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
-    "bitRate": 96,
+    "bitRate": 128,
     "kind": 0,
     "preload": false,
     "sampleRate": 44100,
-    "type": 1,
-    "volume": 0.63
+    "type": 0,
+    "volume": 1
 }

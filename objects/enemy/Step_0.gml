@@ -19,7 +19,7 @@ if (hp <= 0) {
 	global.points += 1;
 	global.currentScore += 1;
 	screenShake(3,5);	
-	audio_play_sound(sound3, 10, false);
+	audio_play_sound(explosion, 10, false);
 	instance_destroy();
 }
 

@@ -12,5 +12,5 @@ with (other) {
 	hp -= other.bulletDamage;	
 }
 var hitSound = audio_play_sound(hit, 10, false);
-audio_sound_pitch(hitSound, random_range(0.1,0.5));
+audio_sound_pitch(hitSound, random_range(4.1,4.2));
 instance_destroy();

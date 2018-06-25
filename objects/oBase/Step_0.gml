@@ -5,7 +5,6 @@ if (hp > 75) {
 } else if (hp > 25) {
 	sprite_index = sBase50;	
 } else if (hp > 0) {
-	screenShake(2,2);
 	sprite_index = sBase25;	
 } 
 
