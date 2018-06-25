@@ -65,6 +65,7 @@ if (gamepad != noone){
 		if (gamepad_button_check_pressed(gamepad, gp_face1)){
 			with (gb) {
 				selectBlock(0, instance_id);
+				audio_play_sound(select, 10, false);
 				if (localSelected) with (blockMenu) { instance_destroy() };
 				blockMenu = noone;
 				if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);
@@ -75,6 +76,7 @@ if (gamepad != noone){
 			with (gb) {
 				if (level < maxLevel && global.points >= 10 * level) {
 					global.points -= 10 * level;
+					audio_play_sound(levelUp, 10, false);
 					level += 1;
 				}
 			}

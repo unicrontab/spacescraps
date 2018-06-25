@@ -56,3 +56,9 @@ if (instance_exists(oPlayer2)) {
 		}
 	}
 }
+if (!instance_exists(oBase)) screenShake(1,4);
+
+if (!instance_exists(oBase) && global.gameover == false) {
+	global.gameover = true;
+	alarm[0] = room_speed *3;
+}

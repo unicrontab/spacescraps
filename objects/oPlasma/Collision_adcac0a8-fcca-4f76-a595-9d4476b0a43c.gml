@@ -11,4 +11,6 @@ with (other) {
 	show_debug_message(string(other.bulletDamage));
 	hp -= other.bulletDamage;	
 }
+var hitSound = audio_play_sound(hit, 10, false);
+audio_sound_pitch(hitSound, random_range(0.5,1.5));
 instance_destroy();

@@ -5,3 +5,5 @@ if (place_meeting(x,y,oGunBlock)) {
 	armed = false;	
 	onSelfGun = true;
 }
+plasmaSound = audio_play_sound(laser1,10, false);
+audio_sound_pitch(plasmaSound, random_range(0.9,1.1));
