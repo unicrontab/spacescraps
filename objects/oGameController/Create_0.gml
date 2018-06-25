@@ -6,7 +6,7 @@ detectAndSetupGamepad();
 // Config
 enemyDelay = 2 * room_speed;
 enemyHp = 10;
-enemyHpMultiplier = 20.00;
+enemyHpMultiplier = 15.00;
 maxEnemyCount = 15;
 levels = 10;
 gunCost = 10;
