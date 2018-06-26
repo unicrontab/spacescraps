@@ -1,6 +1,4 @@
-timeout = 5;
-opacity = 1;
-direction = random_range(0,360);
+event_inherited();
+timeout = 5 * room_speed;
+fadeSpeed = 0.001;
 speed = random_range(0,0.5);
-xspeed = 0;
-yspeed = 0;

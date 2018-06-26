@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "26eeef97-d4a5-42f0-b764-eab9d4260072",
+            "Value": {
+                "id": "70542812-00a8-4c78-9e64-b3008098ee17",
+                "resourcePath": "views\\26eeef97-d4a5-42f0-b764-eab9d4260072.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2890c503-4827-4d3b-be9f-81134d01bf4e",
             "Value": {
                 "id": "df91a1d8-4146-40b0-be54-6f74e48d9d9b",
@@ -180,6 +188,14 @@
                 "id": "b0b5db07-b465-4107-8801-e34388db65a5",
                 "resourcePath": "sprites\\sBase75\\sBase75.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29a1f098-66c3-4a57-8a74-ada69c64a670",
+            "Value": {
+                "id": "395a1f19-19a9-49f8-87fa-12c7dcbcbdcb",
+                "resourcePath": "views\\29a1f098-66c3-4a57-8a74-ada69c64a670.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -243,6 +259,14 @@
             "Value": {
                 "id": "22532314-0835-4296-be25-ebc03406bda7",
                 "resourcePath": "objects\\oThrust\\oThrust.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3b6b4ff9-532a-45d2-9980-532e14d1d44a",
+            "Value": {
+                "id": "cb22b03c-0e37-467f-935e-24fa6cc2dd07",
+                "resourcePath": "objects\\oParticle\\oParticle.yy",
                 "resourceType": "GMObject"
             }
         },

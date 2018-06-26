@@ -1,6 +1,2 @@
-timeout = 30;
-opacity = 1;
-direction = random_range(0,360);
+event_inherited();
 speed = 4;
-xspeed = 0;
-yspeed = 0;
