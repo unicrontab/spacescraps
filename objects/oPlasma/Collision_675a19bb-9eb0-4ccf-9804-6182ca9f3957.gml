@@ -8,7 +8,6 @@ with (instance_create_layer(other.x,other.y,"Particles",oEnemySpray)){
 }
 bulletDamage = damage;
 with (other) {
-	show_debug_message(string(other.bulletDamage));
 	hp -= other.bulletDamage;	
 }
 var hitSound = audio_play_sound(hit, 10, false);

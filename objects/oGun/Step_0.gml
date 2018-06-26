@@ -1,4 +1,4 @@
-var collidedEnemy = collision_circle(x, y, 100, enemy, false, true);
+var collidedEnemy = collision_circle(x, y, 100, oEnemy, false, true);
 if (collidedEnemy) {
 	image_angle = point_direction(x, y, collidedEnemy.x, collidedEnemy.y);
 	firingDelay = firingDelay - 1;

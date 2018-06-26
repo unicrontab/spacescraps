@@ -7,13 +7,15 @@ detectAndSetupGamepad();
 enemyDelay = 2 * room_speed;
 enemyHp = 10;
 enemyHpMultiplier = 15.00;
-maxEnemyCount = 15;
+maxEnemyCount = 10;
 levels = 10;
 gunCost = 10;
+waveDelay = 5 * room_speed;
 
 // Ephem
 enemyCount = 0;
 currentInterval = 0;
+pausedForWave = false;
 currentLevel = 1;
 
 // Background stuff
