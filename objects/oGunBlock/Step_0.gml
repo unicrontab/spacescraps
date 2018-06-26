@@ -3,19 +3,19 @@
 
 sprite_index = gunLevelImages[level - 1];
 
-var xTo = oPlayer.x;
-var yTo = oPlayer.y;
+var xTo = oPlayer1.x;
+var yTo = oPlayer1.y;
 
 var closestGunBlock = instance_nearest(x,y, object_index);
 
-if (distance_to_object(oPlayer) > distance_to_object(oPlayer2)) {
+if (distance_to_object(oPlayer1) > distance_to_object(oPlayer2)) {
 	xTo = oPlayer2.x;
 	yTo = oPlayer2.y;
 }
 
 
 var tooClose = collision_circle(x,y,10,oGunBlock,false,true);
-if (localSelected && distance_to_object(oPlayer) > 40 && distance_to_object(oPlayer2) > 40 && tooClose < 0) {
+if (localSelected && distance_to_object(oPlayer1) > 40 && distance_to_object(oPlayer2) > 40 && tooClose < 0) {
 	x += (xTo - x) / 50;
 	y += (yTo - y) / 50;
 }
