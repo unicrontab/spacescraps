@@ -9,7 +9,7 @@ if (hp <= 0) {
 		}
 	}
 	instance_create_layer(x,y,"Particles",oPlusOne);
-	repeat(random_range(0,3)){
+	repeat(random_range(0,4)){
 		with (instance_create_layer(x,y, "Instances", oCoin)){
 			speed = random_range(0,1);
 			direction = random_range(0,360);
