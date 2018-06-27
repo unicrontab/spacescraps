@@ -56,12 +56,17 @@ y += yspeed;
 if (gamepad != noone){
 	gb = instance_nearest(x, y, oGunBlock);
 	if (distance_to_object(gb) < 40){
+		
+		var aPress = gamepad_button_check_pressed(gamepad, gp_face1);
+		if (gamepad_get_description(gamepad) == "Logitech Cordless RumblePad 2") aPress = gamepad_button_check_pressed(gamepad, gp_face2);
+		
+		
 		if (gamepad_button_check_pressed(gamepad, gp_face4)){
 			with (gb) {
 				showInfo = !showInfo;
 			}
 		}		
-		if (gamepad_button_check_pressed(gamepad, gp_face1)){
+		if (aPress){
 			with (gb) {
 				selectBlock(0, instance_id);
 				audio_play_sound(select, 10, false);
@@ -71,7 +76,12 @@ if (gamepad != noone){
 				localSelected = !localSelected;
 			}
 		}
-		if (gamepad_button_check_pressed(gamepad, gp_face3)){
+		
+		var xPress = gamepad_button_check_pressed(gamepad, gp_face3);
+		if (gamepad_get_description(gamepad) == "Logitech Cordless RumblePad 2") xPress = gamepad_button_check_pressed(gamepad, gp_face1);
+		
+		
+		if (xPress){
 			with (gb) {
 				if (level < maxLevel && global.points >= 10 * level) {
 					global.points -= 10 * level;
