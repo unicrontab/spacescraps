@@ -1,7 +1,9 @@
 draw_set_font(base);
-draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-// draw_text_transformed(x + 20, y, string(global.currentScore),2,2, image_angle);
+
+draw_set_halign(fa_center);
+draw_text_transformed(camera_get_view_width(view_camera[1]), 30, string(global.currentScore),2,2, image_angle);
+draw_set_halign(fa_left);
 
 var pointColor = $06a4ff;
 draw_sprite_ext(coin, image_index, x, y, 4,4,image_angle,c_white,1);

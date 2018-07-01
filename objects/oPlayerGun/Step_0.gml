@@ -14,8 +14,11 @@ else image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 firingDelay = firingDelay - 1;
 if (oPlayer.gamepad != noone){
-	pad_trigger = gamepad_button_value(oPlayer.gamepad, gp_shoulderrb);
-	if pad_trigger && (firingDelay < 0) {
+	var rbPress = gamepad_button_check(oPlayer.gamepad, gp_shoulderrb);
+	if (gamepad_get_description(oPlayer.gamepad) == "Logitech Cordless RumblePad 2") rbPress = gamepad_button_check(oPlayer.gamepad, gp_shoulderr);
+
+	show_debug_message(rbPress);
+	if rbPress && (firingDelay < 0) {
 		firingDelay	= 5;
 		with (instance_create_layer(x, y, "Instances", oPlasma)) {
 			speed = 10;
