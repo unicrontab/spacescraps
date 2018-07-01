@@ -8,7 +8,7 @@ if (global.playerGamepads[1] != noone && !instance_exists(oPlayer2)){
 
 
 
-if (currentInterval >= enemyDelay && enemyCount <= maxEnemyCount && currentLevel <= levels && !pausedForWave) {
+if (global.paused != true && currentInterval >= enemyDelay && enemyCount <= maxEnemyCount && currentLevel <= levels && !pausedForWave) {
 	if (currentLevel == 1 || currentLevel == 5) {
 		enemyCount += 1;
 		enemyHp = other.currentLevel + other.currentLevel * enemyHpMultiplier;
@@ -54,20 +54,6 @@ if (global.building && mouse_check_button_pressed(mb_left) && global.points > gu
 	}
 }
 
-if (oPlayer.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer)){
-	if (gamepad_button_check_pressed(oPlayer.gamepad, gp_face2)){
-		instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oGunBlock);
-		global.points -= gunCost;
-	}
-}
-if (instance_exists(oPlayer2)) {
-	if (oPlayer2.gamepad != noone && global.points >= gunCost){
-		if (gamepad_button_check_pressed(oPlayer2.gamepad, gp_face2)){
-			instance_create_layer(oPlayer2.x, oPlayer2.y, "Instances", oGunBlock);
-			global.points -= gunCost;
-		}
-	}
-}
 if (!instance_exists(oBase)) screenShake(1,4);
 
 if (!instance_exists(oBase) && global.gameover == false) {

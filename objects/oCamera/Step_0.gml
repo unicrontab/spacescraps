@@ -35,13 +35,16 @@ if (global.playerGamepads[1] != noone && follow2 != noone) {
 	// var viewMatrix = matrix_build_lookat(oPlayer2.x, oPlayer2.y, -10, oPlayer2.x, oPlayer2.y, 0, 0, 1, 0);
 	// camera_set_view_mat(camera2, viewMatrix);
 	
-} else {
-	view_visible[1] = false;	
 }
 	
 // Update camera pos
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+if (global.paused != true){
+	x += (xTo - x) / 25;
+	y += (yTo - y) / 25;
+} else {
+	x = 1500;
+	y = 1700;
+}
 
 
 // Shakes

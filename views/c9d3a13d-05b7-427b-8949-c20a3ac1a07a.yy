@@ -14,7 +14,8 @@
         "26eeef97-d4a5-42f0-b764-eab9d4260072",
         "3b444e6b-e275-4ed1-b87c-42e16e6cab04",
         "1cf658dc-dc44-47c5-bc80-1943b6b255d1",
-        "c2473a29-9e36-4e44-a693-56008b1b5174"
+        "c2473a29-9e36-4e44-a693-56008b1b5174",
+        "3f4421bd-d916-4c90-a621-9decf5814097"
     ],
     "filterType": "GMObject",
     "folderName": "Particles",

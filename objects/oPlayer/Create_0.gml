@@ -2,6 +2,8 @@
 maxSpeed = 2;
 movespeed = 0.05;
 
+unlocks[0] = true;
+unlocks[1] = true;
 
 // Ephem
 xspeed = 0;

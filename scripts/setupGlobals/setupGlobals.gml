@@ -8,3 +8,4 @@ global.building = false;
 global.playerGamepads[0] = noone;
 global.playerGamepads[1] = noone;
 global.gameover = false;
+global.paused = false;

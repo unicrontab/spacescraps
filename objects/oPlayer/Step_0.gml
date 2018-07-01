@@ -25,8 +25,6 @@ if (yspeed > maxSpeed) yspeed = maxSpeed;
 if (xspeed < -maxSpeed) xspeed = -maxSpeed;
 if (yspeed < -maxSpeed) yspeed = -maxSpeed;
 
-
-
 if (y > room_height) y = 0;
 if (x > room_width) x = 0;
 if (y < 0) y = room_height;
@@ -48,29 +46,55 @@ if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+yspeed) != 0) || (tilemap
 	yspeed = 0;
 }
 
- 
-x += xspeed;
-y += yspeed;
+if (global.paused != true) {
+	x += xspeed;
+	y += yspeed;
+}
+	
 
 // Gamepad GunBlock Selection
 if (gamepad != noone){
 	gb = instance_nearest(x, y, oGunBlock);
 	if (distance_to_object(gb) < 40){
+		// Press A
+		if (gamepad_button_check_pressed(gamepad, gp_face1)){
+			
+			// Build menu open
+			if (!buildSelected){
+				with (gb) {
+					audio_play_sound(select, 10, false);
+					if (localSelected) with (blockMenu) { instance_destroy() };
+					blockMenu = noone;
+					if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);
+					localSelected = !localSelected;
+				}
+			// Build menu closed
+			} else {
+				
+			}
+		}
+		
+		// Press B
+		if (gamepad_button_check_pressed(gamepad, gp_face2)) {
+			with (gb) {
+				audio_play_sound(select, 10, false);
+				if (localSelected) with (blockMenu) { instance_destroy() };
+				localSelected = false;
+				blockMenu = noone;
+				buildSelected = !buildSelected;
+				log("In gb press");
+				log(buildSelected);
+			}
+		}	
+		
+		// Press Y
 		if (gamepad_button_check_pressed(gamepad, gp_face4)){
 			with (gb) {
 				showInfo = !showInfo;
 			}
 		}		
-		if (gamepad_button_check_pressed(gamepad, gp_face1)){
-			with (gb) {
-				selectBlock(0, instance_id);
-				audio_play_sound(select, 10, false);
-				if (localSelected) with (blockMenu) { instance_destroy() };
-				blockMenu = noone;
-				if (!localSelected) blockMenu = instance_create_layer(x, y, "Menu", oMove);
-				localSelected = !localSelected;
-			}
-		}
+		
+		// Press X
 		if (gamepad_button_check_pressed(gamepad, gp_face3)){
 			with (gb) {
 				if (level < maxLevel && global.points >= 10 * level) {
@@ -80,6 +104,17 @@ if (gamepad != noone){
 				}
 			}
 		}
+		
+	} else if (distance_to_object(gb) > 40) {
+		
+		// Press B
+		if (gamepad_button_check_pressed(gamepad, gp_face2)) {
+			if (global.points >= 10) {
+				instance_create_layer(x,y,"Instances",oGunBlock);
+				global.points -= 10;
+			}
+		}	
 	}
 }
+
 

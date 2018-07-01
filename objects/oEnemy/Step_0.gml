@@ -1,4 +1,12 @@
 if (hp > startingHp) startingHp = hp;
+
+if (global.paused == true) {
+	path_speed = 0;
+} else {
+	path_speed = startingSpeed;
+}
+
+
 if (hp <= 0) {
 	repeat(200) {
 		instance_create_layer(x,y,"Particles",oEnemySpray);	
