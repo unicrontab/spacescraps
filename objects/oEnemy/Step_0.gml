@@ -6,6 +6,13 @@ if (global.paused == true) {
 	path_speed = startingSpeed;
 }
 
+var closestSpeedBuff = instance_nearest(x,y,speedBuff);
+if (closestSpeedBuff && distance_to_object(closestSpeedBuff) < closestSpeedBuff.radius && global.paused == false) {
+	path_speed = startingSpeed * closestSpeedBuff.multiplier;	
+} else if (global.paused == false) {
+	path_speed = startingSpeed;	
+}
+
 
 if (hp <= 0) {
 	repeat(200) {
@@ -18,10 +25,7 @@ if (hp <= 0) {
 	}
 	instance_create_layer(x,y,"Particles",oPlusOne);
 	repeat(random_range(0,coins)){
-		with (instance_create_layer(x,y, "Instances", oCoin)){
-			speed = random_range(0,1);
-			direction = random_range(0,360);
-		}
+		instance_create_layer(x,y, "Instances", oCoin);
 	}
 	instance_create_layer(x,y,"Particles",oPlusOne);
 	global.points += points;

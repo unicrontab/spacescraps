@@ -13,7 +13,7 @@ if (oPlayer.gamepad != noone){
 else image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 firingDelay = firingDelay - 1;
-if (oPlayer.gamepad != noone){
+if (oPlayer.gamepad != noone && !global.paused){
 	var rbPress = gamepad_button_check(oPlayer.gamepad, gp_shoulderrb);
 	if (gamepad_get_description(oPlayer.gamepad) == "Logitech Cordless RumblePad 2") rbPress = gamepad_button_check(oPlayer.gamepad, gp_shoulderr);
 

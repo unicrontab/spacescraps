@@ -15,7 +15,7 @@ if (distance_to_object(oPlayer1) > distance_to_object(oPlayer2)) {
 
 
 var tooClose = collision_circle(x,y,10,oGunBlock,false,true);
-if (localSelected && distance_to_object(oPlayer1) > 40 && distance_to_object(oPlayer2) > 40 && tooClose < 0) {
+if (localSelected && distance_to_object(oPlayer1) > 40 && distance_to_object(oPlayer2) > 40 && tooClose < 0 && global.paused == false) {
 	x += (xTo - x) / 50;
 	y += (yTo - y) / 50;
 }

@@ -1,6 +1,8 @@
 // Config
-maxSpeed = 2;
-movespeed = 0.05;
+maxSpeed = 3;
+movespeed = 0.1;
+selectDistance = 40;
+drag = 0.02;
 
 unlocks[0] = true;
 unlocks[1] = true;

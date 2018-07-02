@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+event_inherited();
 
-color = $0000ff;
+color = global.red;
 radius = 30;
-player = noone;
+multiplier = 1.8;

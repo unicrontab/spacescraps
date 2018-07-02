@@ -1,4 +1,7 @@
 camera = camera_create();
+lastStepPaused = false;
+lastCoords[0, 0] = oPlayer.x;
+lastCoords[0, 1] = oPlayer.y;
 
 
 var viewMatrix = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);

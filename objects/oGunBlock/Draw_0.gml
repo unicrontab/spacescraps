@@ -6,6 +6,13 @@ var green = $50e599;
 var yellow = $06a4ff;
 var red = $6357d9;
 
+var closestDamageBuff = instance_nearest(x,y, damageBuff);
+if (closestDamageBuff && distance_to_object(closestDamageBuff) < closestDamageBuff.radius) {
+	damageMultiplier = closestDamageBuff.multiplier;	
+} else {
+	damageMultiplier = 1.0;	
+}
+
 if (drawHelp && !localSelected && !buildSelected) {
 	
 	draw_set_font(subtitle);
@@ -62,13 +69,13 @@ if (buildSelected) {
 	if (unlocks[0] == true) {
 		draw_set_halign(fa_center);
 		draw_sprite_ext(spriteA, -1,   x, y+15, 0.5, 0.5, image_angle, c_white, 1);
-		draw_text_transformed_color(   x, y+23, "Speed modulator",0.5,0.5, image_angle, green, green, green, green, 0.8);	
+		draw_text_transformed_color(   x, y+23, "Damage multiplier",0.5,0.5, image_angle, green, green, green, green, 0.8);	
 	}
 	
 	if (unlocks[1] == true) {
 		draw_set_halign(fa_right);
 		draw_sprite_ext(spriteX, -1, x-15,    y, 0.5, 0.5, image_angle, c_white, 1);
-		draw_text_transformed_color( x-22, y, "Damage multiplier",0.5,0.5, image_angle, blue, blue, blue, blue, 0.8);
+		draw_text_transformed_color( x-22, y, "Speed modulator",0.5,0.5, image_angle, blue, blue, blue, blue, 0.8);
 		draw_text_transformed_color( x-50, y, string(-10 * level),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);
 	}
 }
@@ -99,7 +106,7 @@ if (showInfo) {
 	draw_set_halign(fa_left);
 	draw_set_font(subtitle);
 	draw_text_transformed_color( x+10, y+15, "level " + string(level),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);	
-	draw_text_transformed_color( x+10, y+25, "dmg   " + string((level*level)*2),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);	
+	draw_text_transformed_color( x+10, y+25, "dmg   " + string((level*level)*2 * damageMultiplier),0.5,0.5, image_angle, yellow, yellow, yellow, yellow, 0.8);	
 	draw_set_halign(fa_center);
 	draw_set_font(base);
 }

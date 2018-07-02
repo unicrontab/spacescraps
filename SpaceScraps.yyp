@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "27c6673b-1114-4fbc-a3c2-e497885067d4",
+            "Value": {
+                "id": "ebf2e8b6-7e2f-4509-9bb1-3ed092873082",
+                "resourcePath": "objects\\playerBuff\\playerBuff.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2890c503-4827-4d3b-be9f-81134d01bf4e",
             "Value": {
                 "id": "df91a1d8-4146-40b0-be54-6f74e48d9d9b",
@@ -439,6 +447,22 @@
             }
         },
         {
+            "Key": "647c9660-2f01-45c2-a9a0-e30e3ee9e7e3",
+            "Value": {
+                "id": "e2751a59-5eed-4692-a18b-7016ff75f986",
+                "resourcePath": "objects\\speedBuff\\speedBuff.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "64e5d5cf-633f-4211-8baa-2c655714f169",
+            "Value": {
+                "id": "573318a3-909b-451a-9046-479743a00401",
+                "resourcePath": "sprites\\sWhite\\sWhite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65778c38-2d70-40e4-8039-d8fcc2dd877c",
             "Value": {
                 "id": "22caf139-409a-46af-84a9-9f4a38ce4115",
@@ -468,6 +492,14 @@
                 "id": "58a3ff5a-bf51-4b38-8d6b-0bcdaf28bed9",
                 "resourcePath": "sprites\\sBaseSpray\\sBaseSpray.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6aa5fdba-6213-4a54-8d53-96575b419be7",
+            "Value": {
+                "id": "541ad493-bc5c-40a0-8b37-21183921f71c",
+                "resourcePath": "objects\\damageIcon\\damageIcon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -839,6 +871,14 @@
             }
         },
         {
+            "Key": "b1001b22-8c26-4e7c-959f-e9209431de82",
+            "Value": {
+                "id": "e608894e-c95a-48c6-a0d9-d786c4eb21b4",
+                "resourcePath": "objects\\speedIcon\\speedIcon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b388309b-2a51-45a5-87d7-424d73e1fe0e",
             "Value": {
                 "id": "3937e7cb-a2e9-4666-92cc-8c639f11d7cd",
@@ -892,6 +932,14 @@
                 "id": "51b0acac-f937-4376-b5f8-b45a364a7873",
                 "resourcePath": "views\\b84db726-b091-4a69-9724-5e2f7968bc66.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b8f2311b-d24c-4f51-9b80-19edf6567cc0",
+            "Value": {
+                "id": "347c002e-a8a8-44ed-8030-49f7ae1a55d2",
+                "resourcePath": "objects\\oWhite\\oWhite.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -995,6 +1043,22 @@
             "Value": {
                 "id": "a98c9545-c9dc-4df0-931e-93e67e8c14ff",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c74bfb16-f8ba-4fcc-b642-4ca498e21f35",
+            "Value": {
+                "id": "aa2c94e3-1bca-44ac-bb36-58b3a5fbcfa8",
+                "resourcePath": "objects\\coinIcon\\coinIcon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c7769f92-815d-48e1-b61f-74d325404b28",
+            "Value": {
+                "id": "e430469a-12d3-4b61-8909-839de8fe1ae3",
+                "resourcePath": "objects\\coinBuff\\coinBuff.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1140,6 +1204,14 @@
                 "id": "3daf7493-e553-49ac-97e2-22ef6747f5e6",
                 "resourcePath": "sounds\\bigExplosion\\bigExplosion.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ebb87800-b662-4f62-94d6-3b4cfc9d3742",
+            "Value": {
+                "id": "0571356b-9635-4c6d-97f2-0de8e4127117",
+                "resourcePath": "objects\\menuIcon\\menuIcon.yy",
+                "resourceType": "GMObject"
             }
         },
         {

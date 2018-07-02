@@ -8,7 +8,7 @@ if (global.playerGamepads[1] != noone && !instance_exists(oPlayer2)){
 
 
 
-if (currentInterval >= enemyDelay && enemyCount <= maxEnemyCount && currentLevel <= levels && !pausedForWave) {
+if (currentInterval >= enemyDelay && enemyCount <= maxEnemyCount && currentLevel <= levels && !pausedForWave && !global.paused) {
 	if (currentLevel == 1 || currentLevel == 5) {
 		enemyCount += 1;
 		enemyHp = other.currentLevel + other.currentLevel * enemyHpMultiplier;
@@ -55,30 +55,7 @@ if (global.building && mouse_check_button_pressed(mb_left) && global.points > gu
 }
 
 
-		
-
-if (oPlayer1.gamepad != noone && global.points >= gunCost && instance_exists(oPlayer1)){
-	var bPress = gamepad_button_check_pressed(oPlayer1.gamepad, gp_face2);
-	if (gamepad_get_description(oPlayer1.gamepad) == "Logitech Cordless RumblePad 2") bPress = gamepad_button_check_pressed(oPlayer1.gamepad, gp_face3);
-		
-	if (bPress){
-		instance_create_layer(oPlayer1.x, oPlayer1.y, "Instances", oGunBlock);
-		global.points -= gunCost;
-	}
-}
-if (instance_exists(oPlayer2)) {
-	var bPress = gamepad_button_check_pressed(oPlayer2.gamepad, gp_face2);
-	if (gamepad_get_description(oPlayer2.gamepad) == "Logitech Cordless RumblePad 2") bPress = gamepad_button_check_pressed(oPlayer2.gamepad, gp_face3);
-		
-	if (oPlayer2.gamepad != noone && global.points >= gunCost){
-		if (bPress){
-			instance_create_layer(oPlayer2.x, oPlayer2.y, "Instances", oGunBlock);
-			global.points -= gunCost;
-		}
-	}
-}
 if (!instance_exists(oBase)) screenShake(1,4);
-
 if (!instance_exists(oBase) && global.gameover == false) {
 	global.gameover = true;
 	alarm[0] = room_speed *3;

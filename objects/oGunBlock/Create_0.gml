@@ -8,6 +8,7 @@ drawHelp = false;
 level = 1;
 maxLevel = 5;
 showInfo = false;
+damageMultiplier = 0;
 
 gunLevelImages[0] = sGun1;
 gunLevelImages[1] = sGun2;

@@ -38,10 +38,17 @@ if (global.playerGamepads[1] != noone && follow2 != noone) {
 }
 	
 // Update camera pos
-if (global.paused != true){
+if (lastStepPaused && global.paused == false) {
+	x = lastCoords[0,0];
+	y = lastCoords[0,1];
+	lastStepPaused = false;
+} else if (global.paused == false){
+	lastCoords[0,0] = oPlayer.x;
+	lastCoords[0,1] = oPlayer.y;
 	x += (xTo - x) / 25;
 	y += (yTo - y) / 25;
-} else {
+} else if (global.paused == true) {
+	lastStepPaused = true;
 	x = 1500;
 	y = 1700;
 }

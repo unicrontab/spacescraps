@@ -9,3 +9,9 @@ global.playerGamepads[0] = noone;
 global.playerGamepads[1] = noone;
 global.gameover = false;
 global.paused = false;
+
+global.blue = $ff9b63;
+global.green = $50e599;
+global.yellow = $06a4ff;
+global.red = $6357d9;
+global.white = $ffffff;

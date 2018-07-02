@@ -6,6 +6,16 @@ if (timeout <= 0 || opacity <= 0) {
 	instance_destroy();
 }
 var delay = 4;
+
+var closestSpeedBuff = instance_nearest(x,y,speedBuff);
+if (closestSpeedBuff && distance_to_object(closestSpeedBuff) < closestSpeedBuff.radius) {
+	speed = startingSpeed * closestSpeedBuff.multiplier;	
+} else {
+	speed = startingSpeed;	
+}
+
+
+
 stepIndex += 1;
 if (opacity > 0.5 && stepIndex > delay) {
 	stepIndex = 0;
